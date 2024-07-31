@@ -1,0 +1,9 @@
+FROM rust:1.52 AS builder
+WORKDIR /app
+COPY . .
+RUN cargo build --release
+
+FROM debian:buster-slim
+COPY --from=builder /app/target/release/solana_blockchain_explorer /usr/local/bin/solana_blockchain_explorer
+EXPOSE 8080
+CMD ["solana_blockchain_explorer"]

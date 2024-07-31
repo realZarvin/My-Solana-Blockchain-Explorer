@@ -1,0 +1,27 @@
+solana-blockchain-explorer
+├── backend
+│   ├── src
+│   │   ├── main.rs
+│   │   ├── routes
+│   │   ├── handlers
+│   │   └── models
+│   ├── Cargo.toml
+│   └── Dockerfile
+├── frontend
+│   ├── src
+│   │   ├── components
+│   │   ├── pages
+│   │   ├── services
+│   │   ├── App.js
+│   │   └── index.js
+│   ├── public
+│   ├── package.json
+│   └── Dockerfile
+├── scripts
+│   └── deploy.sh
+├── tests
+│   ├── backend_tests.rs
+│   ├── frontend_tests.js
+│   └── integration_tests.rs
+├── README.md
+└── docker-compose.yml
